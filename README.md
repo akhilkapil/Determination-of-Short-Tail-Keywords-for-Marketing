@@ -30,10 +30,10 @@
 
 1. __K-menas Clustering__
 
- - Applying Elbow Method  on Data Matrix 
+Applying Elbow Method  on Data Matrix 
 !['Alt Text'](https://github.com/akhilkapil/Determination-of-Short-Tail-Keywords-for-Marketing/blob/main/elbow%201.png)
 __Observations:__
 - As per the figure above we can deduce the elbow to occur at k=9.<br/>
-- Applying Variance Explained  on Data Matrix
+Applying Variance Explained  on Data Matrix
 !['Alt Text'](https://github.com/akhilkapil/Determination-of-Short-Tail-Keywords-for-Marketing/blob/main/elbow%202.png)
 - We can observe that the gradient to start smoothing from k = 9, similar to what he had observered with the Elbow method.
