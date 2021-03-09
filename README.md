@@ -31,9 +31,22 @@
 1. __K-menas Clustering__
 
 Applying Elbow Method  on Data Matrix 
-!['Alt Text'](https://github.com/akhilkapil/Determination-of-Short-Tail-Keywords-for-Marketing/blob/main/elbow%201.png)
+!['Elbow Method'](https://github.com/akhilkapil/Determination-of-Short-Tail-Keywords-for-Marketing/blob/main/elbow%201.png)
 __Observations:__
 - As per the figure above we can deduce the elbow to occur at k=9.<br/>
+
 Applying Variance Explained  on Data Matrix
 !['Alt Text'](https://github.com/akhilkapil/Determination-of-Short-Tail-Keywords-for-Marketing/blob/main/elbow%202.png)
-- We can observe that the gradient to start smoothing from k = 9, similar to what he had observered with the Elbow method.
+- We can observe that the gradient to start smoothing from k = 9, similar to what he had observered with the Elbow method.<br/>
+
+!['Alt Text'](https://github.com/akhilkapil/Determination-of-Short-Tail-Keywords-for-Marketing/blob/main/output_20_0.png)
+- On plotting silhouette score, I found out that optimal number of clusters according to silhouette score (to be the point where the Silhouette coefficient is the highest), is 27.
+- Therefore, we couldn't realistically choose 27 to be the right number of clusters for the following reasons:
+
+  1. 27 clusters will be too many for a data matrix having 398 observations in total.
+  2. We couldn't market 27 different segments within the limited amount of time we had.
+ 
+- When I plotted the 9 clusters using PCA(reduced 9 cluster to two), this is what I get:
+!['Alt Text](https://github.com/akhilkapil/Determination-of-Short-Tail-Keywords-for-Marketing/blob/main/output_26_1.png)
+- Cluster memberships in Figure above seemed to be distinct and non-overlapping.
+- We saw  that except for two clusters, which had 80 observations each, the remaining seven clusters had 30 observations each on average.
