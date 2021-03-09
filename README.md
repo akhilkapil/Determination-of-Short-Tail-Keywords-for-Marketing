@@ -25,21 +25,23 @@
 - After transform the data will look something like this:<br/>
 !['Transformed Data'](https://github.com/akhilkapil/Determination-of-Short-Tail-Keywords-for-Marketing/blob/main/png%201.PNG)
 
-#### 2.2 Modeling the data Using Clustering Algorithms
+### 2.2 Modeling the data Using Clustering Algorithms
 (I wont go in to the funtioning of K-means infact I would just show the results )
 
 1. __K-menas Clustering__
 
 Applying Elbow Method  on Data Matrix 
-!['Elbow Method'](https://github.com/akhilkapil/Determination-of-Short-Tail-Keywords-for-Marketing/blob/main/elbow%201.png)
-__Observations:__
+!['Elbow Method'](https://github.com/akhilkapil/Determination-of-Short-Tail-Keywords-for-Marketing/blob/main/elbow%201.png)<br/>
+__Observations:__<br/>
 - As per the figure above we can deduce the elbow to occur at k=9.<br/>
 
 Applying Variance Explained  on Data Matrix
 !['Alt Text'](https://github.com/akhilkapil/Determination-of-Short-Tail-Keywords-for-Marketing/blob/main/elbow%202.png)
+__Observations:__<br/>
 - We can observe that the gradient to start smoothing from k = 9, similar to what he had observered with the Elbow method.<br/>
 
 !['Alt Text'](https://github.com/akhilkapil/Determination-of-Short-Tail-Keywords-for-Marketing/blob/main/output_20_0.png)
+__Observations:__<br/>
 - On plotting silhouette score, I found out that optimal number of clusters according to silhouette score (to be the point where the Silhouette coefficient is the highest), is 27.
 - Therefore, we couldn't realistically choose 27 to be the right number of clusters for the following reasons:
 
@@ -47,6 +49,28 @@ Applying Variance Explained  on Data Matrix
   2. We couldn't market 27 different segments within the limited amount of time we had.
  
 - When I plotted the 9 clusters using PCA(reduced 9 cluster to two), this is what I get:
-!['Alt Text](https://github.com/akhilkapil/Determination-of-Short-Tail-Keywords-for-Marketing/blob/main/output_26_1.png)
+!['Alt Text](https://github.com/akhilkapil/Determination-of-Short-Tail-Keywords-for-Marketing/blob/main/output_26_1.png) 
 - Cluster memberships in Figure above seemed to be distinct and non-overlapping.
-- We saw  that except for two clusters, which had 80 observations each, the remaining seven clusters had 30 observations each on average.
+- We saw  that except for two clusters, which had 80 observations each, the remaining seven clusters had 30 observations each on average
+
+- I wanted to see weather the keywords in each group were overlapping with other clusters or not. For this I used wordcloud to see all the keywords inside a cluster.
+- This is the output I got:
+!['Alt Text](https://github.com/akhilkapil/Determination-of-Short-Tail-Keywords-for-Marketing/blob/main/output_32_0.png)
+<br/>
+
+After looking at Figure above, we can define the nine clusters as follows: <br/>
+- __Cluster 1__ : Papers talking about search and robotics
+- __Cluster 2__: Papers talking in depth about models’ learning and optimization
+- __Cluster 3__: Topics of application of data analytics in games and social media analytics
+- __Cluster 4__: Topics of image recognition, robotics, and social media analytics
+- __Cluster 5__: Topics of linear programming and search
+- __Cluster 6__: Papers on reasoning-based models
+- __Cluster 7__: Papers on application of data sciences in social graphs and other online mediums
+- __Cluster 8__: Topics ranging in knowledge graphs
+- __Cluster 9__: Papers concentrating on game theory and data security
+
+__Our findings:__ <br/>
+
+- Some clusters had overlapping terms; for instance, clusters 1 and 5 had “search” as the overlapping term.
+- This is not good, as we want to remove the overlap to make the cluster keywords and characteristics as distinctive as possible.
+
