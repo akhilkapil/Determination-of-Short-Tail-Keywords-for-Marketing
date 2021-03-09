@@ -37,11 +37,11 @@ __Observations:__<br/>
 
 Applying Variance Explained on Data Matrix
 
-!['variance Explained'](https://github.com/akhilkapil/Determination-of-Short-Tail-Keywords-for-Marketing/blob/main/download.png)
+!['variance Explained'](https://github.com/akhilkapil/Determination-of-Short-Tail-Keywords-for-Marketing/blob/main/download.png)<br/>
 __Observations:__<br/>
 - We can observe that the gradient to start smoothing from k = 9, similar to what he had observered with the Elbow method.<br/>
 
-!['Alt Text'](https://github.com/akhilkapil/Determination-of-Short-Tail-Keywords-for-Marketing/blob/main/output_20_0.png)
+!['Alt Text'](https://github.com/akhilkapil/Determination-of-Short-Tail-Keywords-for-Marketing/blob/main/output_20_0.png)<br/>
 __Observations:__<br/>
 - On plotting silhouette score, I found out that optimal number of clusters according to silhouette score , is 27(to be the point where the Silhouette coefficient is the highest).
 - Therefore, we couldn't realistically choose 27 to be the right number of clusters for the following reasons:
