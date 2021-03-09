@@ -1,10 +1,8 @@
-# Determination-of-Short-Tail-Keywords-for-Marketing
+# __Determination-of-Short-Tail-Keywords-for-Marketing__
  
 <br/>
 
 ## 1. __Case Overview__
-
-- The given problem is based on unsupervised learning.<br/>
   
 - The client has some data containing several research papers scrapped from the web and they want our help to organise all of them and group the papers by keywords or groups.<br/>
 - This inturn would help them to run separate ads on social media and use SEO to target the respective keywords within them.<br/>
@@ -25,4 +23,4 @@
 - For our model we converted the “groups” feature into Boolean, such that a research paper that falls within a group will have 1 marked next to it, and 0 otherwise.<br/>
   
 - After transform the data will look something like this:<br/>
-!['Transformed Data'](https://github.com/akhilkapil/Determination-of-Short-Tail-Keywords-for-Marketing/blob/main/png%201.PNG)
+!['Transformed Data'](https://github.com/akhilkapil/Determination-of-Short-Tail-Keywords-for-Marketing/blob/main/output_20_0.png)
