@@ -79,10 +79,9 @@ __Our findings:__ <br/>
 2. __Bayesian Gaussian Mixture__
 (if one want to read about bayesian Gaussian Mixture they can go to this  [Link](https://www.analyticsvidhya.com/blog/2019/10/gaussian-mixture-models-clustering/) 
 
-- The whole reaosn to select Bayesiian Gaussian Mixture was that it was able to decide on its own the right number of clusters required for a given problem.
-- Thus we dont need to evaulate the cluster required just like kmeans.
+- The whole reaosn to select Bayesian Gaussian Mixture was that it was able to decide on its own the right number of clusters required for a given problem.
+- Thus we dont need to evaulate the number of cluster required, just like kmeans.
 - When I fit my matrix dataset using Bayessian Gaussan Mixture, this is the result I get:<br/>
-
 
 
 |Cluster|Observations|
@@ -101,9 +100,10 @@ After looking at Figure above, we can define the three clusters as follows:
 - __Cluster 1__: Papers discussing in depth game theory and social media analytics.
 - __Cluster 2__: Papers discussing in depth model optimization and models’ learning.
 - __Cluster 3__: Topics on linear programming, knowledge graphs, and reasoning-based models.
-
+- And no keywords overlapping into other groups.
+- Well looks like we have acheived what we were aiming for.
 ## __Final Conlusion__
-- Well, I think the result we achieved from Bayessian gaussian mixture certainy prevails the result we achieved from KMeans.
+- Well, I think the result we achieved from Bayesian gaussian mixture certainy prevails the result we achieved from KMeans.
 - After going through the whoe case I think we were able to get finite clusters with distinct characteristics.
 - In addition I think its best to drop the output of k-means and go forward with the segments defined by the Bayesian Gaussian mixture model because clusters made by Bayesian Gaussian mixture made more intuitive sense, and second, that it was smart enough to find the optimal number of clusters all on its own.
 - So in a nutshell, we can target these three components from the Bayesian Gaussian mixture model to fuel our marketing strategies.
