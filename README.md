@@ -53,7 +53,7 @@ __Observations:__<br/>
 - Cluster memberships in Figure above seemed to be distinct and non-overlapping.
 - We saw  that except for two clusters, which had 80 observations each, the remaining seven clusters had 30 observations each on average
 
-- I wanted to see weather the keywords in each group were overlapping with other clusters or not. For this I used wordcloud to see all the keywords inside a cluster.
+- I wanted to see weather the keywords in each group were overlapping with other clusters or not. For this I used wordcloud to see all the keywords inside a cluster.<br/>
 - This is the output I got:
 !['Alt Text](https://github.com/akhilkapil/Determination-of-Short-Tail-Keywords-for-Marketing/blob/main/output_32_0.png)
 <br/>
@@ -73,4 +73,37 @@ __Our findings:__ <br/>
 
 - Some clusters had overlapping terms; for instance, clusters 1 and 5 had “search” as the overlapping term.
 - This is not good, as we want to remove the overlap to make the cluster keywords and characteristics as distinctive as possible.
+- As there were so many overlapping terms in my clusters, I decided to drop the idea of using kmeans and found some other algortihm to deal with this problem.
+
+2. __Bayesian Gaussian Mixture__
+(if one want to read about bayesian Gaussian Mixture they can go to this  [Link](https://www.analyticsvidhya.com/blog/2019/10/gaussian-mixture-models-clustering/) 
+
+- The whole reaosn to select Bayesiian Gaussian Mixture was that it was able to decide on its own the right number of clusters required for a given problem.
+- Thus we dont need to evaulate the cluster required just like kmeans.
+- When I fit my matrix dataset using Bayessian Gaussan Mixture, this is the result I get:<br/>
+
+
+
+|Cluster|Observations|
+|-------|----------|
+|`Cluster 1`| 299|
+|`Cluster 2`| 117|
+|`Cluster 3`| 50|
+
+- We can clearly see that more than 50% of the observations lie in cluster 1.
+- Well its not a problem untill unless the keywords are not overlapping, so lets check the keywords in each distributions.<br/>
+
+!['Alt Text](https://github.com/akhilkapil/Determination-of-Short-Tail-Keywords-for-Marketing/blob/main/output_49_0.png)
+
+After looking at Figure above, we can define the three clusters as follows:
+
+- __Cluster 1__: Papers discussing in depth game theory and social media analytics.
+- __Cluster 2__: Papers discussing in depth model optimization and models’ learning.
+- __Cluster 3__: Topics on linear programming, knowledge graphs, and reasoning-based models.
+
+## __Final Conlusion__
+- Well, I think the result we achieved from Bayessian gaussian mixture certainy prevails the result we achieved from KMeans.
+- After going through the whoe case I think we were able to get finite clusters with distinct characteristics.
+- In addition I think its best to drop the output of k-means and go forward with the segments defined by the Bayesian Gaussian mixture model because clusters made by Bayesian Gaussian mixture made more intuitive sense, and second, that it was smart enough to find the optimal number of clusters all on its own.
+- So in a nutshell, we can target these three components from the Bayesian Gaussian mixture model to fuel our marketing strategies.
 
