@@ -24,3 +24,16 @@
   
 - After transform the data will look something like this:<br/>
 !['Transformed Data'](https://github.com/akhilkapil/Determination-of-Short-Tail-Keywords-for-Marketing/blob/main/png%201.PNG)
+
+#### 2.2 Modeling the data Using Clustering Algorithms
+(I wont go in to the funtioning of K-means infact I would just show the results )
+
+1. __K-menas Clustering__
+
+ - Applying Elbow Method  on Data Matrix 
+!['Alt Text'](https://github.com/akhilkapil/Determination-of-Short-Tail-Keywords-for-Marketing/blob/main/elbow%201.png)
+__Observations:__
+- As per the figure above we can deduce the elbow to occur at k=9.<br/>
+- Applying Variance Explained  on Data Matrix
+!['Alt Text'](https://github.com/akhilkapil/Determination-of-Short-Tail-Keywords-for-Marketing/blob/main/elbow%202.png)
+- We can observe that the gradient to start smoothing from k = 9, similar to what he had observered with the Elbow method.
