@@ -5,8 +5,8 @@
 ## 1. __Case Overview__
   
 - The client has some data containing several research papers scrapped from the web and they want our help to organise all of them and group the papers by keywords or groups.<br/>
-- This inturn would help them to run separate ads on social media and use SEO to target the respective keywords within them.<br/>
-- One thing has to be kept in mind which is to make minimal numbers of cluster as there are distinct values within keywords and group features, thus they would result in many clusters of SEO keywords. <br/>
+- This in turn would help them to run separate ads on social media and use SEO to target the respective keywords within them.<br/>
+- One thing has to be kept in mind which is to make minimal numbers of cluster as there are a lot of distinct values within keywords and group features, thus they would result in many clusters of SEO keywords. <br/>
 
 ## 2. __Approach To solve this problem__
 
