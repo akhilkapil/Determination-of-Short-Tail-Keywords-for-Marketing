@@ -10,13 +10,12 @@
 
 ## 2. __Approach To solve this problem__
 
-- The given problem required us to build a unsupervised clustering model which can group different keywords under similar groups.
+- The given problem required us to build an unsupervised clustering model which can categorize different keywords under similar groups.
 
-- As per the requirement, we have to look after these three question and anlyse their solutions properly:<br/>
+- As per the requirement, we have to look at the following questions and anlyse their solutions properly:<br/>
   
   - How many clusters would be optimal from the data provided?
-  - How many clusters would be optimal from the data provided?
-  - How should he visually present the data and, ultimately, the findings?  
+  - How should we visually present the data and, ultimately, the findings?  
   
 ### 2.1 Data Transformation for Modeling
   
@@ -26,23 +25,23 @@
 !['Transformed Data'](https://github.com/akhilkapil/Determination-of-Short-Tail-Keywords-for-Marketing/blob/main/png%201.PNG)
 
 ### 2.2 Modeling the data Using Clustering Algorithms
-(I wont go in to the funtioning of K-means infact I would just show the results )
+(I wont go into the funtioning of K-means infact I would just show the analysis and where it failed to acheive the results.)
 
-1. __K-menas Clustering__
+1. __K-means Clustering__
 
-Applying Elbow Method  on Data Matrix 
+Applying Elbow Method on Data Matrix 
 !['Elbow Method'](https://github.com/akhilkapil/Determination-of-Short-Tail-Keywords-for-Marketing/blob/main/elbow%201.png)<br/>
 __Observations:__<br/>
 - As per the figure above we can deduce the elbow to occur at k=9.<br/>
 
-Applying Variance Explained  on Data Matrix
+Applying Variance Explained on Data Matrix
 !['Alt Text'](https://github.com/akhilkapil/Determination-of-Short-Tail-Keywords-for-Marketing/blob/main/elbow%202.png)
 __Observations:__<br/>
 - We can observe that the gradient to start smoothing from k = 9, similar to what he had observered with the Elbow method.<br/>
 
 !['Alt Text'](https://github.com/akhilkapil/Determination-of-Short-Tail-Keywords-for-Marketing/blob/main/output_20_0.png)
 __Observations:__<br/>
-- On plotting silhouette score, I found out that optimal number of clusters according to silhouette score (to be the point where the Silhouette coefficient is the highest), is 27.
+- On plotting silhouette score, I found out that optimal number of clusters according to silhouette score , is 27(to be the point where the Silhouette coefficient is the highest).
 - Therefore, we couldn't realistically choose 27 to be the right number of clusters for the following reasons:
 
   1. 27 clusters will be too many for a data matrix having 398 observations in total.
